@@ -29,7 +29,7 @@ businessReviewData = []
 for businessDatum in businessData:
     response = requests.get("https://api.yelp.com/v3/businesses/" + businessDatum['id'] + "/reviews",
         headers={
-            "Authorization": "Bearer S_sMSY7Lg9iyt54QL4CFA9fauAeLiiOF_7QYAP3Ti3cPbpM8pG8K-reYLULM3tiCDTL7hjyoDoUoz3YXTGtExiJRBdfHHp7zsIOo4ifg6laQDuz690lvnDKhdUZIXnYx"
+            "Authorization": ""
         }
     )
     respJSON = response.json()
